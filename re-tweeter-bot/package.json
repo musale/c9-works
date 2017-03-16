@@ -1,7 +1,7 @@
 {
   "name": "twitter-bot",
   "version": "1.0.0",
-  "description": "twitter bot bootstrap",
+  "description": "twitter retweeting bot",
   "main": "index.js",
   "devDependencies": {
     "standard": "^8.6.0"
@@ -12,7 +12,7 @@
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect"
   },
-  "author": "",
+  "author": "Martin Musale",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^4.0.0",
