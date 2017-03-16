@@ -1,0 +1,25 @@
+{
+  "name": "twitter-bot",
+  "version": "1.0.0",
+  "description": "twitter bot bootstrap",
+  "main": "index.js",
+  "devDependencies": {
+    "standard": "^8.6.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "standard && node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "twit": "^2.2.5",
+    "unique-random-array": "^1.0.0",
+    "unirest": "^0.5.1",
+    "snyk": "^1.25.1"
+  },
+  "snyk": true
+}
