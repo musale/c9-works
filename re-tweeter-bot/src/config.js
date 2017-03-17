@@ -11,7 +11,7 @@
 
 module.exports = {
   twitter: {
-    username: process.env.USERNAME,
+    username: process.env.TWITTER_USERNAME,
     consumerKey: process.env.CONSUMER_KEY,
     consumerSecret: process.env.CONSUMER_SECRET,
     accessToken: process.env.ACCESS_TOKEN,
