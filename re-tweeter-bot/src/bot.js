@@ -52,6 +52,7 @@ let retweet = function () {
   Twitter.get('search/tweets', params, function (err, data) {
     if (!err) { // if there no errors
       try {
+        console.log("data: ", data);
         // grab ID of tweet to retweet
         // run sentiment check ==========
         var retweetId = data.statuses[0].id_str
