@@ -46,7 +46,7 @@ As an example, I'll configure the old [@DroidScott](twitter.com/droidscott) twit
 
 Straight forward enough for the twitter application, just make sure you add your phone number to your Twitter account before clicking the **Create your Twitter application** button.
 
-![](/src/images/twitter-application-setup.png)
+![](/re-tweeter-bot/src/images/twitter-application-setup.png)
 
 You should now be in the 'Application Management' section where you will need to take note of your keys. You should have your 'Consumer Key (API Key)' and 'Consumer Secret (API Secret)' already available. You'll need to scroll to the bottom of the page and click the **Create my access token** to get the 'Access Token' and 'Access Token Secret' take note of all four of them as you'll need them when setting up the bot.
 
