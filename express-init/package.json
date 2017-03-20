@@ -1,0 +1,14 @@
+{
+  "name": "express-init",
+  "version": "1.0.0",
+  "description": "Initial express testing project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Musale Martin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
