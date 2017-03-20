@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>QUOTED</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <h1 class="display-3">Quote a Sensei</h1>
+        <p class="lead">Enter a quote of your favorite Sensei.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <form action="/quotes" method="POST">
+          <div class="form-group">
+            <input required type="text" placeholder="Quote title" name="title" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <textarea required type="text" placeholder="Sensei's Wise Words" name="content" class="form-control"></textarea>
+          </div>
+
+          <div class="form-group">
+            <input required type="text" placeholder="Sensei's name" name="name" class="form-control">
+          </div>
+
+          <button class="btn btn-default btn-block" type="submit">Say it!</button>
+        </form>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+    <hr>
+    <div class="card-columns">
+      <% for(var i=0; i<quotes.length; i++) {%>
+
+        <div class="card card-inverse card-primary p-3 text-center">
+          <h4 class="card-title">
+            <%= quotes[i].title %>
+          </h4>
+          <blockquote class="card-blockquote">
+            <p>
+              <%= quotes[i].content %>
+            </p>
+            <footer>
+              <small>
+          Says <cite title="Source Title"><%= quotes[i].name %></cite>
+        </small>
+            </footer>
+          </blockquote>
+        </div>
+        <% } %>
+
+    </div>
+    <ul class="quotes">
+
+    </ul>
+
+
+  </div>
+</body>
+
+</html>
