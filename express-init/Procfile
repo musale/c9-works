@@ -1,0 +1,2 @@
+worker: npm run dev
+heroku ps:scale worker=1
